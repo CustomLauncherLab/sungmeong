@@ -1,6 +1,6 @@
 appId: 'sungmeong'
-productName: '숭 멍'
-artifactName: 'sungmeong-setup-${version}.${ext}'
+productName: '숭멍의 놀이터2'
+artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2024 gotiger'
 
@@ -14,11 +14,10 @@ extraResources:
   - 'libraries'
 
 # Windows Configuration
-win:
-  target:
+win: 
+  target: 
     - target: 'nsis'
       arch: 'x64'
-  publisherName: 'gotiger'
 
 # Windows Installer Configuration
 nsis:
@@ -34,18 +33,16 @@ mac:
       arch:
         - 'x64'
         - 'arm64'
-  artifactName: 'sungmeong-setup-${version}-${arch}.${ext}'
+  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 
 # Linux Configuration
-linux:
+linux: 
   target: 'AppImage'
-  maintainer: 'gotiger'
-  vendor: 'gotiger'
+  maintainer: 'Daniel Scalzi'
+  vendor: 'Daniel Scalzi'
   synopsis: 'Modded Minecraft Launcher'
-  description:
-    'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled
-    automatically.'
+  description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
   category: 'Game'
 
 directories:
